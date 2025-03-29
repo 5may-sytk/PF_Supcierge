@@ -5,7 +5,12 @@
 }
 
 header {
-  background-color:#afafb0;
+  background-color:#fafdff;
+  border-bottom: 2px solid #bcc7d7; /* 下線を追加 */
+}
+.nav-title {
+  width: 65%; /* 画像の幅を40%に設定 */
+  height: auto; /* アスペクト比を保つために高さは自動に */
 }
 
 body {
@@ -13,5 +18,11 @@ body {
 }
 
 footer {
-  background-color:#afafb0;
+  background-color:#fafdff;
+  border-top: 2px solid #bcc7d7; /* 下線を追加 */
+}
+.footer-text {
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
 }
