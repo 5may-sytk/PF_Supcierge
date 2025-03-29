@@ -12,6 +12,11 @@ header {
   width: 65%; /* 画像の幅を40%に設定 */
   height: auto; /* アスペクト比を保つために高さは自動に */
 }
+.header-nav-btn {
+  color: #3e62ad;
+  font-size: large;
+  font-weight: bold;
+}
 
 body {
   background-color:#fafdff;
@@ -25,4 +30,5 @@ footer {
   display: flexbox;
   justify-content: center;
   text-align: center;
+  color: #606163;
 }
