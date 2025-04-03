@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   devise_for :users, skip: [:mailer, :passwords], controllers: {
     registrations: "public/registrations",
+    passwords:     'public/passwords',
     sessions: 'public/sessions'
     }, path_names: {
       sign_in: 'Log_in'
