@@ -2,9 +2,7 @@
   <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container">
       <div class="row logo-area">
-        <%= link_to root_path do %>
-          <%= image_tag("Title.png", alt: "Title", class: "nav-title") %>
-        <% end %>
+        <%= image_tag("Title.png", alt: "Title", class: "nav-title") %>
       </div>
       <!-- メニュー --> 
       <div class="row menu-area">
@@ -29,7 +27,7 @@
               <%= link_to 'Log in', new_user_session_path, class: 'btn header-nav-btn' %>
             </li>
             <li class="btn nav-item">
-              <%= link_to 'Sing up', new_user_registration_path, class: 'btn header-nav-btn' %>
+              <%= link_to 'Sign up', new_user_registration_path, class: 'btn header-nav-btn' %>
             </li>
           <% end %>
         </ul>
