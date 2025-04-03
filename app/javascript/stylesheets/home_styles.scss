@@ -4,3 +4,13 @@
   box-sizing: border-box;
 }
 
+.home-title {
+  display: flex;
+  justify-content: center;
+}
+
+.home-title-text {
+  width: 400px;
+  height: auto;
+  padding: 30px;
+}
