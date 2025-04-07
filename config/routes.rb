@@ -16,10 +16,15 @@ Rails.application.routes.draw do
   get "about", to: "homes#about"
 
   namespace :admin do
+    resources :users
   end
 
   scope module: :public do
-    resources :users, only: [:show, :edit, :update]
+    resources :users, only: [:show] #検証用
+    get 'maypage', to: 'users#show', as: :maypage
+    get 'maypage/edit', to: 'users#edit', as: :edit_maypage
+    patch 'maypage', to: 'users#update'
+
     
   end
 
