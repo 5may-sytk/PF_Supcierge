@@ -16,7 +16,7 @@
           <% elsif user_signed_in? %>
             <!-- ユーザーログイン時 --> 
             <li class="btn nav-item">
-              <%= link_to 'MyPage', maypage_path, class: 'btn header-nav-btn' %>
+              <%= link_to 'MyPage', user_path(current_user.id), class: 'btn header-nav-btn' %>
             </li>
             <li class="btn nav-item">
               <%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'btn header-nav-btn' %>
