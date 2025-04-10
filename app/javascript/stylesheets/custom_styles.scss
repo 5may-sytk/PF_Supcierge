@@ -7,7 +7,23 @@
 header {
   background-color:#fafdff;
   border-bottom: 2px solid #bcc7d7; /* 下線を追加 */
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1000;
 }
+.header-top {
+  /* display: flex;
+  justify-content: space-between; */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
 .nav-title {
   width: 50%; /* 画像の幅を40%に設定 */
   height: auto; /* アスペクト比を保つために高さは自動に */
@@ -16,6 +32,12 @@ header {
   color: #3e62ad;
   font-size: large;
   font-weight: bold;
+}
+
+.header-bottom {
+  /* display: flex;
+  justify-content: center; */
+  padding: 8px 20px;
 }
 
 body {
