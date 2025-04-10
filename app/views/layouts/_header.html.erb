@@ -1,12 +1,17 @@
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark">
-    <div class="container">
+  <div class="container">
+  <!-- 上メニュー --> 
+    <div class="header-top">
       <div class="row logo-area">
         <%= link_to root_path do %>
         <%= image_tag("Title.png", alt: "Title", class: "nav-title") %>
         <% end %>
       </div>
-      <!-- メニュー --> 
+      <div class="row search-area">
+      </div>
+    </div>
+  <!-- 下メニュー --> 
+    <nav class="header-bottom">
       <div class="row menu-area">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <% if admin_signed_in?  %>
@@ -41,5 +46,5 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </div>
 </header>
