@@ -21,9 +21,10 @@ Rails.application.routes.draw do
 
   scope module: :public do
     resources :users, only: [:show] #検証用
-    get 'maypage', to: 'users#show', as: :maypage
-    get 'maypage/edit', to: 'users#edit', as: :edit_maypage
-    patch 'maypage', to: 'users#update'
+    get 'mypage', to: 'users#show', as: :mypage
+    get 'mypage/info', to: 'users#info', as: :info_mypage
+    get 'mypage/edit', to: 'users#edit', as: :edit_mypage
+    patch 'mypage', to: 'users#update'
 
     
   end

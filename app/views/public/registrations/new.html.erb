@@ -9,12 +9,13 @@
 
       <div class="field">
         <%= f.label :name %><br />
-      <%= f.text_field :name, autofocus: true, placeholder:"ニックネーム", class:"form-control", size:40; %>
+        <%= f.text_field :name, autofocus: true, placeholder:"ニックネーム", class:"form-control", size:40; %>
+        <%= f.hidden_field :unique_id, value: SecureRandom.alphanumeric(10) %>
       </div>
 
       <div class="field">
         <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, class:"form-control"; %>
+        <%= f.email_field :email, autofocus: true, class:"form-control"; %>
       </div>
 
       <div class="field">

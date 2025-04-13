@@ -60,7 +60,6 @@ ActiveRecord::Schema.define(version: 2025_03_25_062516) do
     t.datetime "remember_created_at"
     t.string "name"
     t.string "unique_id"
-    t.boolean "is_public", default: true
     t.boolean "is_active", default: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
