@@ -1,0 +1,2 @@
+class Recurringrule < ApplicationRecord
+end
