@@ -1,0 +1,2 @@
+class Todotag < ApplicationRecord
+end
