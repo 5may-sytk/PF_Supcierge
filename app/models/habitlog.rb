@@ -1,0 +1,2 @@
+class Habitlog < ApplicationRecord
+end

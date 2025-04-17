@@ -1,0 +1,2 @@
+class Habittag < ApplicationRecord
+end
